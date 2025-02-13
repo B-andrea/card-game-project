@@ -15,7 +15,7 @@ public class CardGame {
 
     // getDeck method that lists out the cards in the deck
     public void getDeck() {
-        for(Card card : deckOfCards) {
+        for (Card card : deckOfCards) {
             System.out.println(card);
         }
     }
@@ -26,11 +26,11 @@ public class CardGame {
 
 
     //populateDeck creates 52 card objects and adds them to deckOfCards
-    private void populateDeck(){
+    private void populateDeck() {
         String[] suits = {"♥", "♣", "♦", "♠"};
         String[] symbols = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
         int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
-        for(String suit:suits) {
+        for (String suit : suits) {
             for (int i = 0; i < symbols.length; i++) {
                 deckOfCards.add(new Card(suit, symbols[i], values[i]));
             }
@@ -38,9 +38,15 @@ public class CardGame {
     }
 
 
-
-
-
+    //Takes the card from the top of the deck and returns it.
+    public Card dealCard() {
+        if (deckOfCards.isEmpty()) {
+            System.out.println("The deck is empty");
+            return null;
+        } else {
+            return deckOfCards.removeFirst(); // method of the LinkedList class to remove and return the first element
+        }
+    }
 
 
 //    public void printDeck() {
