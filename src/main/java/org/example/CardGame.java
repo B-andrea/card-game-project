@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class CardGame {
     private ArrayList<Card> deckOfCards;
@@ -41,12 +42,28 @@ public class CardGame {
     //Takes the card from the top of the deck and returns it.
     public Card dealCard() {
         if (deckOfCards.isEmpty()) {
-            System.out.println("The deck is empty");
+            System.out.println("No cards left");
             return null;
         } else {
             return deckOfCards.removeFirst(); // method of the LinkedList class to remove and return the first element
         }
     }
+
+    //Sort deck in number order (22223333 etc) - Store the new shuffled deck into DeckOfCards.
+    public ArrayList<Card> sortDeckInNumberOrder() {
+        deckOfCards.sort(Comparator.comparingInt(card -> card.getValue())); //(argument list) -> {body of lambda expression}
+        return deckOfCards;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 //    public void printDeck() {

@@ -14,7 +14,9 @@ public class Card {
         this.value = value;
     }
 
-
+    public int getValue() {
+        return value;
+    }
 
     //Display each card as a string
     public String toString() {
