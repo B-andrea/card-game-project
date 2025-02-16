@@ -57,6 +57,17 @@ This stage will implement core functionality for the CardGame class, including m
 
 ---
 
+### Stage 3:
+
+This stage creates a Snap class, which extends the CardGame class and allows for playing the Snap game based on the rules.
+
+- [x] Snap class extends CardGame - inheriting methods like shuffleDeck() and dealCard().
+- [x] Two instance variables: isGameOver (to track if the game has ended) and previousCard (to track the cards dealt in each round).
+- [x] The constructor calls the superclass constructor (super(name)) to initialize the game name.
+- [x] Prompt the player to press enter to take their turn.
+- [x] Dealing a Card: It deals the top card from the deck and assigns it to 'nextCard'.
+- [x] Snap Check: It compares the current card with the previous card. If the symbols are the same (i.e., the two cards match in symbol), it declares the player the winner and ends the game by setting isGameOver to true.
+- [x] Update the previous card to be the current card for the next round - previousCard = nextCard.
 
 
 

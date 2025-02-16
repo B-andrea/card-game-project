@@ -87,9 +87,6 @@ public class CardGame {
 
 
 
-
-
-
 //    public void printDeck() {
 //        for ( int i = 0; i < this.deckOfCards.size(); i++) {
 //            Card cardRetrieved = this.deckOfCards.get(i);

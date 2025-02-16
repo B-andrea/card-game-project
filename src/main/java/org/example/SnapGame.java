@@ -35,14 +35,3 @@ public class SnapGame extends CardGame {
         }
     }
 }
-
-// Create the scanner object, using system out and prompting player to press enter
-// name of scanner object.nextLine()
-// System in, to identify that a user has pressed Enter
-
-// Give them one card from the deck, using deal card method
-// Check if there are any cards left. If no cards left, then game ends. Setting a variable 'isGameOver' to true.
-// Compare the current card with the previous card
-// If they are the same, then game ends. Setting a variable 'isGameOver' to true
-// If they are not the same, store the card in the variable to indicate that this is the 'previous card'
-// Then loop repeats itself
