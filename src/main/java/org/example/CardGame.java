@@ -51,6 +51,14 @@ public class CardGame {
     }
 
 
+    //Sort deck in number order (22223333 etc) - Store the new shuffled deck into DeckOfCards.
+    public ArrayList<Card> sortDeckInNumberOrder() {
+        deckOfCards.sort(Comparator.comparingInt(card -> card.getValue())); //(argument list) -> {body of lambda expression}
+        return deckOfCards;
+    }
+
+
+
     //shuffle deck into random order
     public ArrayList<Card> shuffleDeck() {
         Collections.shuffle(deckOfCards);
