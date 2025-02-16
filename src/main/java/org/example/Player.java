@@ -1,3 +1,5 @@
+package org.example;
+
 // Keep track of players and score
 
 public class Player {
