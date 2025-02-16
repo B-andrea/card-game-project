@@ -28,6 +28,6 @@ public class Card {
 
     //Display each card as a string
     public String toString() {
-        return symbol + suit;
+        return symbol + " of " + suit;
     }
 }
