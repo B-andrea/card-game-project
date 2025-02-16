@@ -28,9 +28,11 @@ This Java implementation allows you to play Snap in a text-based format. Test yo
 
 ## ♢ Project Breakdown
 
-### Stage 1:
+### ♤ Stage 1:
 
 This stage focuses on creating classes for a deck of cards, including a CardGame class to manage the deck and a Card class to represent individual cards.
+
+---
 
 - [x] Create a Card Class
 - [x] String suit to represent the suit of the card ("♥", "♦", "♣", "♠")
@@ -46,9 +48,11 @@ This stage focuses on creating classes for a deck of cards, including a CardGame
 
 ---
 
-### Stage 2:
+### ♤ Stage 2:
 
 This stage will implement core functionality for the CardGame class, including methods for dealing cards, sorting the deck by number, sorting the deck by suit, and shuffling the deck.
+
+---
 
 - [x] A method to take the card from the top of the deck and return it. Use ArrayList method to remove and return the first element
 - [x] Sort deck in number order - The sortDeckInNumberOrder() method sorts the deckOfCards list by the card values. It then returns the newly sorted deck.
@@ -57,9 +61,11 @@ This stage will implement core functionality for the CardGame class, including m
 
 ---
 
-### Stage 3:
+### ♤ Stage 3:
 
 This stage creates a Snap class, which extends the CardGame class and allows for playing the Snap game based on the rules.
+
+---
 
 - [x] Snap class extends CardGame - inheriting methods like shuffleDeck() and dealCard().
 - [x] Two instance variables: isGameOver (to track if the game has ended) and previousCard (to track the cards dealt in each round).
@@ -68,6 +74,19 @@ This stage creates a Snap class, which extends the CardGame class and allows for
 - [x] Dealing a Card: It deals the top card from the deck and assigns it to 'nextCard'.
 - [x] Snap Check: It compares the current card with the previous card. If the symbols are the same (i.e., the two cards match in symbol), it declares the player the winner and ends the game by setting isGameOver to true.
 - [x] Update the previous card to be the current card for the next round - previousCard = nextCard.
+
+---
+
+### ♤ Stage 4:
+
+This stage introduces a Player class, implements a two-player setup, allows users to take turns, and adds the timer for a "Snap" condition. If two cards are the same, the player has 2 seconds to type "snap" to win; otherwise, they lose.
+
+---
+
+
+
+
+
 
 
 
