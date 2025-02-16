@@ -18,6 +18,14 @@ public class Card {
         return value;
     }
 
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public String getSuit() {
+        return suit;
+    }
+
     //Display each card as a string
     public String toString() {
         return symbol + suit;
