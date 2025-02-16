@@ -57,7 +57,22 @@ public class CardGame {
         return deckOfCards;
     }
 
+    //sort deck by suit and return deck
+    public ArrayList<Card> sortDeckIntoSuits() {
+        ArrayList<Card> sortedCards = new ArrayList<>();
 
+
+        deckOfCards.sort((card1, card2) -> {
+            int suitComparison = card1.getSuit().compareTo(card2.getSuit());
+            if (suitComparison !=0) {
+                return suitComparison;
+            }
+            return Integer.compare(card1.getValue(), card2.getValue());
+
+
+        });
+        return deckOfCards;
+    }
 
     //shuffle deck into random order
     public ArrayList<Card> shuffleDeck() {
