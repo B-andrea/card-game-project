@@ -13,7 +13,7 @@ public class SnapGame extends CardGame {
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
-            System.out.println("Time is up! You did not type 'snap' in time. Game Over");
+            System.out.println("You missed the Snap! Game Over");
             isGameOver = true;
         }
     };
@@ -22,7 +22,6 @@ public class SnapGame extends CardGame {
         super("Snap");
         player1 = new Player("Player 1", true);
         player2 = new Player("Player 2", false);
-
     }
 
     public void playGame() {
@@ -43,7 +42,7 @@ public class SnapGame extends CardGame {
                 int symbolComparison = previousCard.getSymbol().compareTo(nextCard.getSymbol());
                 if (symbolComparison == 0) { // If even
                     System.out.println("SNAP! You have 2 seconds to type 'snap' to win!");
-                    timer.schedule(task, 5000L);
+                    timer.schedule(task, 2000L);
 
                     String userInput = scanner.nextLine();
                     if (userInput.equalsIgnoreCase("snap")) {
@@ -57,8 +56,6 @@ public class SnapGame extends CardGame {
                     // cancel timer here if usr enter sanp fast enough
                     // or let timer go off and handle LOOSE situation in the task executed by timer
 
-
-//                    String userInput = scanner.nextLine();
 
                     //Start timer
 
@@ -79,10 +76,6 @@ public class SnapGame extends CardGame {
 
 
     }
-
-
-
-
     // Users take turns
     public void switchUser() {
         if (player1.isPlaying()) {

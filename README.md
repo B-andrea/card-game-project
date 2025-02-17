@@ -83,6 +83,20 @@ This stage introduces a Player class, implements a two-player setup, allows user
 
 ---
 
+- [x] Create player class - string name and int score for each player.
+- [x] Constructor to initialise the player’s name and set their score to 0.
+- [x] Methods to get the player’s name and score.
+- [x] A method to increment the score by 1 when called.
+- [x] A switchPlayer method to alternate between players (in snapGame class).
+- [x] If cards are the same on the user’s turn, prompt the user to type ‘snap’ within 2 secs.
+- [x] A 2-second timer is started when the cards match.
+- [x] The player must input the word "snap" within the time limit to win.
+- [x] Check for snap input from the user using the scanner.
+- [x] If the player runs out of time, the game ends.
+- [x] Otherwise, get the current player and increment their score.
+
+
+
 
 
 
