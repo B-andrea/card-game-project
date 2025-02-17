@@ -18,7 +18,7 @@ Welcome to the command-line version of Snap! This is a fast-paced card game wher
 
 3. When two consecutive cards in the central pile match in symbol, the player must race to type "Snap" in the console.
 
-4. The player to correctly call 'snap' within 2 seconds, wins the game. If it is not typed in time, the player loses and the game ends.
+4. The player to correctly call 'snap' within 2 seconds, wins the game. If it is not typed in time, the player loses and the next player takes their turn.
 
 ---
 
