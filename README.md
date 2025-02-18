@@ -4,6 +4,28 @@
 
 Welcome to the command-line version of Snap! This is a fast-paced card game where players take turns placing cards onto a central pile. The objective is simple: when two consecutive cards in the pile have the same symbol (e.g., two Kings or two 5s), the player must type "Snap!" to win the game.
 
+---
+
+## ♢ Setting Up and Running the Game
+
+---
+
+1. #### Open the Project in an IDE:
+
+Open a terminal (or Git Bash on Windows) - and clone the repository.
+
+Open the cloned project in your IDE (such as IntelliJ IDEA or Eclipse etc).
+
+2. #### Compile the Project:
+
+In IntelliJ or Eclipse, the IDE should automatically recognize the project structure and compile the code when you run it.
+
+3. #### Run the Game:
+
+In IntelliJ or Eclipse, simply click the Run button on Main.java in your Java IDE. Enjoy the game!
+
+---
+
 ## ♢ Basic Rules Of The Game:
 
 ---
@@ -18,7 +40,7 @@ Welcome to the command-line version of Snap! This is a fast-paced card game wher
 
 3. When two consecutive cards in the central pile match in symbol, the player must race to type "Snap" in the console.
 
-4. The player to correctly call 'snap' within 2 seconds, wins the game. If it is not typed in time, the player loses and the next player takes their turn.
+4. The player to correctly call 'snap' within 2 seconds, wins the game. If it is not typed in time, the player loses and the game ends.
 
 ---
 
