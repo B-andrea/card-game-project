@@ -117,6 +117,18 @@ This stage introduces a Player class, implements a two-player setup, allows user
 - [x] If the player runs out of time, the game ends.
 - [x] Otherwise, get the current player and increment their score.
 
+---
+
+#### Supplementary Notes / Project Breakdown
+https://docs.google.com/document/d/1UmbjXOSED73xM7AhMOw7nmIhlVrm8oAhX3bvFbnLgdU/edit?tab=t.0
+
+---
+
+### Contributing
+If you want to contribute to the game (for example, adding features or fixing bugs), feel free to fork the repository and create a pull request! 😊
+
+
+
 
 
 

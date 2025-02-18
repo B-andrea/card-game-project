@@ -6,8 +6,8 @@ public class Player {
 
     String name; // Player's name
     int score;
-//    Is this player currently playing?
-   private  boolean isPlaying;
+    //    Is this player currently playing?
+    private boolean isPlaying;
 
     public boolean isPlaying() {
         return isPlaying;

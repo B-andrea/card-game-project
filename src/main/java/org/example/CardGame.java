@@ -64,7 +64,7 @@ public class CardGame {
 
         deckOfCards.sort((card1, card2) -> {
             int suitComparison = card1.getSuit().compareTo(card2.getSuit());
-            if (suitComparison !=0) {
+            if (suitComparison != 0) {
                 return suitComparison;
             }
             return Integer.compare(card1.getValue(), card2.getValue());
@@ -80,18 +80,4 @@ public class CardGame {
         return deckOfCards;
     }
 
-
-
-
-
-
-
-
-//    public void printDeck() {
-//        for ( int i = 0; i < this.deckOfCards.size(); i++) {
-//            Card cardRetrieved = this.deckOfCards.get(i);
-//            String description = cardRetrieved.toString();
-//            System.out.println(description);
-//        }
-//    }
 }

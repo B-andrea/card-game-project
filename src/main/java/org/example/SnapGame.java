@@ -52,30 +52,14 @@ public class SnapGame extends CardGame {
                         isGameOver = true;
                     }
 
-                    // check for snap input from user here
-                    // cancel timer here if usr enter sanp fast enough
-                    // or let timer go off and handle LOOSE situation in the task executed by timer
-
-
-                    //Start timer
-
-                    //if user types in time - increment score
-                    // Print message displaying winning player
-                    // isGameOver = true
-                    //else
-                    // Print message - You ran out of time
-                    // Call switchUser to switch to the other player
-
                 }
             }
             // Update the previous card
             previousCard = nextCard;
             switchUser();
-
         }
-
-
     }
+
     // Users take turns
     public void switchUser() {
         if (player1.isPlaying()) {
@@ -88,10 +72,12 @@ public class SnapGame extends CardGame {
         }
 
     }
+
     public String getCurrentPlayerName() {
         if (player1.isPlaying()) return player1.getName();
         return player2.getName();
     }
+
     public Player getCurrentPlayer() {
         if (player1.isPlaying()) return player1;
         return player2;
